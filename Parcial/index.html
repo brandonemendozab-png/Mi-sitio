@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad de Datos | Guía de Backups</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-light: #f4f7f6;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        .hero-img {
+            flex: 1;
+            max-width: 400px;
+            border-radius: 8px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .backup-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border-top: 5px solid var(--accent-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Estrategias de Backup & Recuperación</h1>
+    <p>Protección de datos profesional</p>
+</header>
+
+<div class="container">
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h2>¿Por qué son vitales los backups?</h2>
+            <p>Un backup es un duplicado de tus datos diseñado para restaurar el sistema en caso de fallos o ataques.</p>
+        </div>
+        <img src="servidores.jpg" alt="Servidores de datos" class="hero-img">
+    </section>
+
+    <div class="backup-grid">
+        <div class="card">
+            <h3>Backup Completo</h3>
+            <p>Copia todos los archivos seleccionados. Es el más seguro pero requiere más espacio.</p>
+        </div>
+
+        <div class="card">
+            <h3>Backup Incremental</h3>
+            <p>Solo copia los datos que han cambiado desde la última copia. Es rápido y eficiente.</p>
+        </div>
+
+        <div class="card">
+            <h3>Backup Diferencial</h3>
+            <p>Copia los archivos cambiados desde el último backup completo. Un punto medio ideal.</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>Brandon Mendoza</p>
+</footer>
+
+</body>
+</html>
